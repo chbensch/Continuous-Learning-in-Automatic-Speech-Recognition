@@ -1,0 +1,8 @@
+# pickle
+pickle/
+
+# model
+wav2vec2-large-xlsr-ger-chris/
+
+# data
+results51_test/
