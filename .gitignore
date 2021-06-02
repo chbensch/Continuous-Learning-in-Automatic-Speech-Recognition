@@ -5,6 +5,8 @@ pickle/
 
 # model
 wav2vec2-large-xlsr-ger-chris/
+wav2vec2-large-xlsr-ger-chris-cut/
 
 # data
 results51_test/
+results51_cut/
