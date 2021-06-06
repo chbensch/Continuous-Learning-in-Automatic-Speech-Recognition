@@ -10,3 +10,8 @@ wav2vec2-large-xlsr-ger-chris-cut/
 # data
 results51_test/
 results51_cut/
+
+# LM
+lm_data/
+kenlm/
+py-ctc-decode/
