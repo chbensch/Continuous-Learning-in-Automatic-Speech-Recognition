@@ -15,3 +15,4 @@ results51_cut/
 lm_data/
 kenlm/
 py-ctc-decode/
+res51_full_log/
