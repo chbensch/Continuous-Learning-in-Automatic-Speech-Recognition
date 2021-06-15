@@ -11,7 +11,7 @@ wav2vec2-large-xlsr-ger-chris-cut/
 results51_test/
 results51_cut/
 
-# LM
+# kenLM
 lm_data/
 kenlm/
 py-ctc-decode/
@@ -23,3 +23,6 @@ lm_full_full/
 lm_cut_cut/
 lm_full_full_2/
 lm_full_full_3/
+
+# transformer LM
+lm_transformer
