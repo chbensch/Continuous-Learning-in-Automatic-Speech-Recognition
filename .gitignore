@@ -7,12 +7,14 @@ pickle/
 wav2vec2-large-xlsr-ger-chris/
 wav2vec2-large-xlsr-ger-chris-cut/
 wav2vec2-large-xlsr-ger-chris-piece/
+wav2vec2-large-xlsr-ger-chris-cut-piece/
 
 # data
 results51_test/
 results51_cut/
 results51_piece/
 results54_piece/
+results54_cut_piece/
 
 # kenLM
 lm_data/
