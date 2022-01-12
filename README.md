@@ -1,6 +1,6 @@
 # Continuous Learning In Automatic Speech Recognition (ASR)
 
-Code repo for my thesis
+Code repo 
 
 ## TL;DR
 
@@ -9,11 +9,8 @@ We focus on new/rare words to improve the overall performance of SOTA speech rec
 
 ## Abstract
 
-Human vocabulary is evolving constantly. Social or cultural changes were often the  underlying cause in the past. However, technology is the driving factor nowadays. Words like "botnet", "selfie" or "blogging" represent an indispensable part of today’s vocabulary and demonstrate the introduction of novel words, which have been of no significance two decades ago. Furthermore, redefinitions of words such as "cookie", "hotspot" or "cloud" expose how our language has evolved in recent years.
-
-Therefore, continuous learning became a crucial factor in Automatic Speech Recognition (ASR). Today's speech recognition models achieve good recognition rates on known words. Thus, only rare- (one-/few-shot-learning) or new words (zero-shot-learning) are a significant challenge. In consequence, recognition rates of these word groups play a critical role when increasing overall ASR system performance. This work explores and evaluates different methods to improve automatic speech recognition of new and rare words.
-
-The results show that the use of an n-gram Language Model (LM) improves the overall performance of our baseline ASR model, by decreasing its WER by 1.8\%. Especially the recognition of rare words was significantly improved. For example, words seen once (one-shot-learning) improved in accuracy from 57\% up to 84\%. However, due to the fixed vocabulary in the language model, zero-shot learning (recognition of new words) was eliminated.
-
-To include these unseen words, the word representation was changed. This was accomplished by training the acoustic baseline model on sub-words using a modified dataset. This did not have a major impact on the WER of the model.  However, this gave us the opportunity to train an n-gram language model based on our newly defined sub-word vocabulary, which significantly improved the overall performance of the model, as the WER decreased by 4.0\% to 10.7\%. In contrast to the word-based language model, the accuracy of the unseen words decreased only slightly. On the other hand, the recognition of the one-shot-learning words has also increased, up to 15\% for more frequent words. While the increase in accuracy is not as significant as for the word-based language model, the much lower WER shows that the model benefits from the subword approach. This can be attributed to the fact that unseen or rare words can now be composed of familiar word parts and are therefore better recognized.
+Today's speech recognition models achieve good transcription performance on most publicly accessible test sets using state-of-the-art deep learning technologies. The systems even attain a human-like error rate. However, in a real-world setting, further challenges must be overcome. One significant issue is that human vocabularies are always changing. This leads to the frequent occurrence of words that did not or only appear sporadically in the training data.
+In this work, we perform an in-depth investigation on the ability of ASR systems to transcribe rare and unknown words. 
+Continuous learning is one possible strategy for tackling this issue. To evaluate the ability of the ASR system and its individual components to accomplish continuous learning, we propose a simulated continuous learning scenario. We show that continuous learning of the language model component is crucial for a strong system, and that the acoustic component can generalize effectively to unknown words using a widely used wav2vec2-based model.  
+We have shown that depending on the chosen word representation, the model focuses on new or rare words. Our best word error rates for new and rare words were achieved by a text-based fine-tuning of a sub-word language model. It was irrelevant whether the acoustic model had been previously fine-tuned with audio samples on the new words.
 
